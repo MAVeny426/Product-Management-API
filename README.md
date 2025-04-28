@@ -28,7 +28,8 @@ This is a simple API for managing users and products, with authentication and au
    git clone https://github.com/MAVeny426/Product-Management-API.git
    cd backend
 
-##API Endpoints
+## API Endpoints
+
 **User Routes**:
 -Description: Registers a new user.
 -Body:
