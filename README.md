@@ -33,7 +33,9 @@ This is a simple API for managing users and products, with authentication and au
 **User Routes**:
 
 -Description: Registers a new user.
-
+```
+POST /signup
+```
 -Body:
 ```
 {
