@@ -39,9 +39,9 @@ POST /signup
 - Body:
 ```
 {
-  "firstName": "John",
-  "email": "john@example.com",
-  "userName": "john123",
+  "firstName": "Joh",
+  "email": "joh@example.com",
+  "userName": "joh123",
   "password": "password123",
   "role": "user"
 }
@@ -62,7 +62,7 @@ POST /login
 
 ```
 {
-  "userName": "john123",
+  "userName": "joh123",
   "password": "password123"
 }
 ```
