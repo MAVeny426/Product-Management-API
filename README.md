@@ -84,7 +84,7 @@ POST /addproduct
 
 ```
 {
-  "name": "Product Name",
+  "name": "Pro",
   "description": "Product description",
   "price": 100,
   "image": "image_url",
@@ -110,7 +110,7 @@ GET /viewproducts
 ```
 [
   {
-    "name": "Product Name",
+    "name": "Pro",
     "description": "Product description",
     "price": 100,
     "image": "image_url",
@@ -128,7 +128,7 @@ GET /getproduct/:name
 
 ```
 {
-  "name": "Product Name",
+  "name": "Pro",
   "description": "Product description",
   "price": 100,
   "image": "image_url",
@@ -145,7 +145,7 @@ DELETE /deleteproduct
 
 ```
 {
-  "name": "Product Name"
+  "name": "Pro"
 }
 ```
 
