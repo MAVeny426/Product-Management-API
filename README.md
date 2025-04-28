@@ -51,38 +51,29 @@ POST /signup
 }
 ```
 POST /login
-Description: Logs in an existing user.
+-Description: Logs in an existing user.
 
-Body:
+-Body:
 
-json
-Copy
-Edit
 ```
 {
   "userName": "john123",
   "password": "password123"
 }
 ```
-Response:
+-Response:
 
-json
-Copy
-Edit
 ```
 {
   "message": "Login successful"
 }
 ```
-Product Routes
+**Product Routes**
 POST /addproduct
 Description: Adds a new product (only accessible to admin).
 
-Body:
+-Body:
 
-json
-Copy
-Edit
 ```
 {
   "name": "Product Name",
@@ -92,11 +83,8 @@ Edit
   "category": "category_name"
 }
 ```
-Response:
+-Response:
 
-json
-Copy
-Edit
 ```
 {
   "message": "Product added successfully",
@@ -104,13 +92,10 @@ Edit
 }
 ```
 GET /viewproducts
-Description: Retrieves a list of all products.
+-Description: Retrieves a list of all products.
 
-Response:
+-Response:
 
-json
-Copy
-Edit
 ```
 [
   {
@@ -124,13 +109,10 @@ Edit
 ]
 ```
 GET /getproduct/:name
-Description: Retrieves details of a specific product by name.
+-Description: Retrieves details of a specific product by name.
 
-Response:
+-Response:
 
-json
-Copy
-Edit
 ```
 {
   "name": "Product Name",
@@ -144,27 +126,21 @@ Edit
 DELETE /deleteproduct
 Description: Deletes a product (only accessible to admin).
 
-Query:
+-Query:
 
-json
-Copy
-Edit
 ```
 {
   "name": "Product Name"
 }
 ```
-Response:
+-Response:
 
-json
-Copy
-Edit
 ```
 {
   "message": "Product Product Name deleted successfully"
 }
 ```
-Middleware
+**Middleware**
 Authentication Middleware: Ensures that users are authenticated via JWT token stored in cookies.
 
 Authorization Middleware: Restricts certain actions (e.g., adding or deleting products) to admin users only.
