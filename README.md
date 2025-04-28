@@ -25,8 +25,8 @@ This is a simple API for managing users and products, with authentication and au
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/product-management-api.git
-   cd product-management-api
+   git clone https://github.com/MAVeny426/Product-Management-API.git
+   cd backend
 
 ##API Endpoints
 **User Routes**:
