@@ -32,11 +32,11 @@ This is a simple API for managing users and products, with authentication and au
 
 **User Routes**:
 
--Description: Registers a new user.
+- Description: Registers a new user.
 
 POST /signup
 
--Body:
+- Body:
 ```
 {
   "firstName": "John",
@@ -47,7 +47,7 @@ POST /signup
 }
 
 ```
--Response:
+- Response:
 ```
 {
   "message": "User created successfully"
@@ -56,9 +56,9 @@ POST /signup
 
 POST /login
 
--Description: Logs in an existing user.
+- Description: Logs in an existing user.
 
--Body:
+- Body:
 
 ```
 {
@@ -66,7 +66,7 @@ POST /login
   "password": "password123"
 }
 ```
--Response:
+- Response:
 
 ```
 {
@@ -75,10 +75,12 @@ POST /login
 ```
 
 **Product Routes**
-POST /addproduct
-Description: Adds a new product (only accessible to admin).
 
--Body:
+POST /addproduct
+
+- Description: Adds a new product (only accessible to admin).
+
+- Body:
 
 ```
 {
@@ -90,7 +92,7 @@ Description: Adds a new product (only accessible to admin).
 }
 ```
 
--Response:
+- Response:
 
 ```
 {
@@ -101,9 +103,9 @@ Description: Adds a new product (only accessible to admin).
 
 GET /viewproducts
 
--Description: Retrieves a list of all products.
+- Description: Retrieves a list of all products.
 
--Response:
+- Response:
 
 ```
 [
@@ -120,9 +122,9 @@ GET /viewproducts
 
 GET /getproduct/:name
 
--Description: Retrieves details of a specific product by name.
+- Description: Retrieves details of a specific product by name.
 
--Response:
+- Response:
 
 ```
 {
@@ -137,9 +139,9 @@ GET /getproduct/:name
 
 DELETE /deleteproduct
 
-Description: Deletes a product (only accessible to admin).
+- Description: Deletes a product (only accessible to admin).
 
--Query:
+- Query:
 
 ```
 {
@@ -147,7 +149,7 @@ Description: Deletes a product (only accessible to admin).
 }
 ```
 
--Response:
+- Response:
 
 ```
 {
