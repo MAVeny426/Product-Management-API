@@ -31,7 +31,9 @@ This is a simple API for managing users and products, with authentication and au
 ## API Endpoints
 
 **User Routes**:
+
 -Description: Registers a new user.
+
 -Body:
 ```{
   "firstName": "John",
