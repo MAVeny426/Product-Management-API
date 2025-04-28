@@ -27,3 +27,16 @@ This is a simple API for managing users and products, with authentication and au
    ```bash
    git clone https://github.com/yourusername/product-management-api.git
    cd product-management-api
+
+##API Endpoints
+**User Routes**:
+-Description: Registers a new user.
+-Body:
+```{
+  "firstName": "John",
+  "email": "john@example.com",
+  "userName": "john123",
+  "password": "password123",
+  "role": "user"
+}
+```
