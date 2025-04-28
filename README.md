@@ -33,7 +33,9 @@ This is a simple API for managing users and products, with authentication and au
 **User Routes**:
 
 -Description: Registers a new user.
+
 POST /signup
+
 -Body:
 ```
 {
@@ -43,6 +45,7 @@ POST /signup
   "password": "password123",
   "role": "user"
 }
+
 ```
 -Response:
 ```
@@ -50,7 +53,9 @@ POST /signup
   "message": "User created successfully"
 }
 ```
+
 POST /login
+
 -Description: Logs in an existing user.
 
 -Body:
@@ -68,6 +73,7 @@ POST /login
   "message": "Login successful"
 }
 ```
+
 **Product Routes**
 POST /addproduct
 Description: Adds a new product (only accessible to admin).
@@ -83,6 +89,7 @@ Description: Adds a new product (only accessible to admin).
   "category": "category_name"
 }
 ```
+
 -Response:
 
 ```
@@ -91,7 +98,9 @@ Description: Adds a new product (only accessible to admin).
   "productId": "PROD001"
 }
 ```
+
 GET /viewproducts
+
 -Description: Retrieves a list of all products.
 
 -Response:
@@ -108,7 +117,9 @@ GET /viewproducts
   }
 ]
 ```
+
 GET /getproduct/:name
+
 -Description: Retrieves details of a specific product by name.
 
 -Response:
@@ -123,7 +134,9 @@ GET /getproduct/:name
   "productId": "PROD001"
 }
 ```
+
 DELETE /deleteproduct
+
 Description: Deletes a product (only accessible to admin).
 
 -Query:
@@ -133,6 +146,7 @@ Description: Deletes a product (only accessible to admin).
   "name": "Product Name"
 }
 ```
+
 -Response:
 
 ```
@@ -140,6 +154,7 @@ Description: Deletes a product (only accessible to admin).
   "message": "Product Product Name deleted successfully"
 }
 ```
+
 **Middleware**
 Authentication Middleware: Ensures that users are authenticated via JWT token stored in cookies.
 
