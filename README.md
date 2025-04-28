@@ -35,11 +35,18 @@ This is a simple API for managing users and products, with authentication and au
 -Description: Registers a new user.
 
 -Body:
-```{
+```
+{
   "firstName": "John",
   "email": "john@example.com",
   "userName": "john123",
   "password": "password123",
   "role": "user"
+}
+```
+-Response:
+```
+{
+  "message": "User created successfully"
 }
 ```
