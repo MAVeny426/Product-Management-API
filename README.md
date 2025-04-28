@@ -33,9 +33,7 @@ This is a simple API for managing users and products, with authentication and au
 **User Routes**:
 
 -Description: Registers a new user.
-```
 POST /signup
-```
 -Body:
 ```
 {
@@ -52,3 +50,121 @@ POST /signup
   "message": "User created successfully"
 }
 ```
+POST /login
+Description: Logs in an existing user.
+
+Body:
+
+json
+Copy
+Edit
+```
+{
+  "userName": "john123",
+  "password": "password123"
+}
+```
+Response:
+
+json
+Copy
+Edit
+```
+{
+  "message": "Login successful"
+}
+```
+Product Routes
+POST /addproduct
+Description: Adds a new product (only accessible to admin).
+
+Body:
+
+json
+Copy
+Edit
+```
+{
+  "name": "Product Name",
+  "description": "Product description",
+  "price": 100,
+  "image": "image_url",
+  "category": "category_name"
+}
+```
+Response:
+
+json
+Copy
+Edit
+```
+{
+  "message": "Product added successfully",
+  "productId": "PROD001"
+}
+```
+GET /viewproducts
+Description: Retrieves a list of all products.
+
+Response:
+
+json
+Copy
+Edit
+```
+[
+  {
+    "name": "Product Name",
+    "description": "Product description",
+    "price": 100,
+    "image": "image_url",
+    "category": "category_name",
+    "productId": "PROD001"
+  }
+]
+```
+GET /getproduct/:name
+Description: Retrieves details of a specific product by name.
+
+Response:
+
+json
+Copy
+Edit
+```
+{
+  "name": "Product Name",
+  "description": "Product description",
+  "price": 100,
+  "image": "image_url",
+  "category": "category_name",
+  "productId": "PROD001"
+}
+```
+DELETE /deleteproduct
+Description: Deletes a product (only accessible to admin).
+
+Query:
+
+json
+Copy
+Edit
+```
+{
+  "name": "Product Name"
+}
+```
+Response:
+
+json
+Copy
+Edit
+```
+{
+  "message": "Product Product Name deleted successfully"
+}
+```
+Middleware
+Authentication Middleware: Ensures that users are authenticated via JWT token stored in cookies.
+
+Authorization Middleware: Restricts certain actions (e.g., adding or deleting products) to admin users only.
